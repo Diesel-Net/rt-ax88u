@@ -1,0 +1,8 @@
+all:
+  children:
+    rt-ax88u:
+      hosts:
+        ap.diesel.net
+  vars:
+    ansible_user: tomdaley92
+    ansible_python_interpreter: /usr/bin/python3
