@@ -2,8 +2,12 @@
 
 - hosts: all
   gather_facts: no
-  
   vars_prompt:
+    
+  - name: ansible_user
+    prompt: ssh username
+    private: no
+
   - name: ansible_ssh_pass
     prompt: ssh password
     private: yes
