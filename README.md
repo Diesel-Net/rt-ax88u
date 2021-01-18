@@ -10,5 +10,5 @@ Automation for Asus RT-AX88U Router running Asuswrt-Merlin
 
 2. Deploy new certificates
 ```bash
-ansible-playbook renew_certificates.yaml -i inventory/prod/hosts --vault-id ~/.tokens/master_id
+ansible-playbook update_certificate.yaml -i inventory/prod/hosts --vault-id ~/.tokens/master_id
 ```
