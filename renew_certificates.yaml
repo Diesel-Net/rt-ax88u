@@ -1,0 +1,29 @@
+# ansible-playbook renew_certificates.yaml -i inventory/prod/hosts --vault-id ~/.tokens/master_id
+
+- hosts: all
+  gather_facts: no
+  vars_prompt:
+    
+  - name: ansible_user
+    prompt: ssh username
+    private: no
+
+  - name: ansible_ssh_pass
+    prompt: ssh password
+    private: yes
+
+  pre_tasks:
+
+  - name: Create new *.pem files
+    raw: >
+      touch /jffs/.cert/cert.pem && 
+      touch /jffs/.cert/key.pem
+
+  - name: Write public certificate data
+    raw: echo '{{ cert }}' > /jffs/.cert/cert.pem
+
+  - name: Write private key data
+    raw: echo '{{ key }}' > /jffs/.cert/key.pem
+
+  - name: Restart http server
+    raw: service restart_httpd
