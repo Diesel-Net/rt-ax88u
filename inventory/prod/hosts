@@ -1,5 +1,0 @@
-all:
-  children:
-    rt-ax88u:
-      hosts:
-        ap.diesel.net
