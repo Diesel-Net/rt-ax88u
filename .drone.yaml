@@ -8,7 +8,7 @@ steps:
     ANSIBLE_CONFIG: ansible.cfg
   settings:
     playbook: update_certificate.yaml
-    inventory: inventory/prod/hosts
+    inventory: inventory/production/hosts
     private_key:
       from_secret: ansible_private_key
     vault_password:
@@ -19,4 +19,3 @@ trigger:
   - stable
   event:
   - push
-  - tag
