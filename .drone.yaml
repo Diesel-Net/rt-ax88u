@@ -5,10 +5,10 @@ steps:
 - name: update certificate
   image: plugins/ansible:3
   environment:
-    ANSIBLE_CONFIG: ansible.cfg
+    ANSIBLE_CONFIG: .ansible/ansible.cfg
   settings:
-    playbook: update_certificate.yaml
-    inventory: inventory/production/hosts
+    playbook: .ansible/update_certificate.yaml
+    inventory: .ansible/inventory/production/hosts
     private_key:
       from_secret: ansible_private_key
     vault_password:

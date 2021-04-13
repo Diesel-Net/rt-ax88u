@@ -1,4 +1,4 @@
-# ansible-playbook update_certificate.yaml -i inventory/prod/hosts --vault-id ~/.tokens/master_id
+# ansible-playbook update_certificate.yaml -i inventory/production/hosts --vault-id ~/.tokens/master_id
 
 - hosts: all
   gather_facts: no
