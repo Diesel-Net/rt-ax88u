@@ -1,6 +1,6 @@
 # ansible-playbook update_certificate.yaml -i inventory/production/hosts --vault-id ~/.tokens/master_id
 
-- hosts: all
+- hosts: rt-ax88u
   gather_facts: no
   pre_tasks:
 
