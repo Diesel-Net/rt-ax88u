@@ -1,4 +1,4 @@
-[![Build Status](https://drone-ci.hopto.org/api/badges/Diesel-Net/rt-ax88u/status.svg)](https://drone-ci.hopto.org/Diesel-Net/rt-ax88u)
+[![Build Status](https://drone.kiwi-labs.net/api/badges/Diesel-Net/rt-ax88u/status.svg)](https://drone.kiwi-labs.net/Diesel-Net/rt-ax88u)
 
 # rt-ax88u
 Automation for Asus RT-AX88U Router running Asuswrt-Merlin
