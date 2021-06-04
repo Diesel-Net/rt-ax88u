@@ -8,7 +8,7 @@ Automation for Asus RT-AX88U Router running Asuswrt-Merlin
 - Ansible 2.10+
 
 # Renew TLS Certificates
-1. Update certificate data in [certificates.yaml](.ansible/group_vars/all/certificates.yaml)
+1. Update certificate data in [certificates.yaml](.ansible/inventory/production/group_vars/rt-ax88u/certificates.yaml)
 
 2. Deploy new certificates
 ```bash
