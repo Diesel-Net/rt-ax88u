@@ -1,3 +1,4 @@
+# end-entity first, then intermediates
 cert: |
   -----BEGIN CERTIFICATE-----
   MIIEaTCCBA+gAwIBAgIBJDAKBggqhkjOPQQDBDAiMSAwHgYDVQQDExdwZlNlbnNl
