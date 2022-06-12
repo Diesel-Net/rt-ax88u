@@ -1,2 +1,0 @@
-ansible_user: "{{ lookup('env', 'SUPER_USER') }}"
-ansible_ssh_pass: "{{ lookup('env', 'SUPER_PASS') }}"

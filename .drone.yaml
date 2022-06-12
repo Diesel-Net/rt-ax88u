@@ -12,7 +12,7 @@ steps:
         from_secret: super_pass
     settings:
       playbook: .ansible/update_certificate.yaml
-      inventory: .ansible/inventory/production/hosts
+      inventory: .ansible/inventories/production.yaml
       private_key:
         from_secret: automation_id_rsa
       vault_password:
